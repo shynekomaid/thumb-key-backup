@@ -112,6 +112,8 @@ RUHyper:
     key1_1:
       left:
         text: ш
+        
+    key2_1:
       bottom:
         text: ґ
 
@@ -157,6 +159,8 @@ RUHyper:
     key1_1:
       left:
         text: Ш
+    
+    key2_1:
       bottom:
         text: Ґ
 
