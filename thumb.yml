@@ -1,0 +1,200 @@
+# ======================================================
+# ENHyper — English thumb-key hyper layer
+# ======================================================
+ENHyper:
+
+  # ----------------------
+  # MAIN — navigation & safe actions
+  # ----------------------
+  main:
+
+    # Diacritics / accents
+    key0_1:
+      top:
+        text: "\u0301"          # Combining acute accent
+        displayText: "◌́"
+
+    # Typography
+    key0_4:
+      top:
+        text: "—"               # Em dash
+
+    # Word-wise navigation
+    key2_0:
+      left:
+        keyAction: PreviousWordBeforeCursor
+        displayText: "↤"
+
+    key2_5:
+      right:
+        keyAction: NextWordAfterCursor
+        displayText: "↦"
+
+
+  # ----------------------
+  # SHIFTED — destructive editor actions
+  # ----------------------
+  shifted:
+
+    # Diacritics (kept identical for muscle memory)
+    key0_1:
+      top:
+        text: "\u0301"
+        displayText: "◌́"
+
+    # Typography (same position as main)
+    key0_4:
+      top:
+        text: "—"
+
+    # Word-wise deletion
+    key2_0:
+      left:
+        keyAction: DeleteWordBeforeCursor
+        displayText: "↜"
+
+    key2_5:
+      right:
+        keyAction: DeleteWordAfterCursor
+        displayText: "↝"
+
+
+  # ----------------------
+  # NUMERIC — symbols & typography helpers
+  # ----------------------
+  numeric:
+
+    # Currency & spacing
+    key1_4:
+      top:
+        text: "₴"               # Ukrainian hryvnia
+      bottom:
+        text: "₽"               # Russian ruble
+      right:
+        text: "\u00A0"          # Non-breaking space
+        displayText: "⍽"
+
+    # Typographic quotes
+    key0_4:
+      topLeft:
+        text: "«"
+      topRight:
+        text: "»"
+
+
+# ======================================================
+# RUHyper — Cyrillic / UA-extended thumb-key hyper layer
+# ======================================================
+RUHyper:
+
+  # ----------------------
+  # MAIN — navigation & language extensions
+  # ----------------------
+  main:
+
+    # Diacritics / accents
+    key0_1:
+      top:
+        text: "\u0301"
+        displayText: "◌́"
+
+    # Ukrainian letters (lowercase)
+    key0_2:
+      top:
+        text: і
+
+    key0_3:
+      top:
+        text: ї
+      bottom:
+        text: є
+
+    key1_1:
+      left:
+        text: ш
+      bottom:
+        text: ґ
+
+    # Apostrophe / light punctuation
+    key0_4:
+      top:
+        text: "'"
+
+    # Word-wise navigation
+    key2_0:
+      left:
+        keyAction: PreviousWordBeforeCursor
+        displayText: "↤"
+
+    key2_5:
+      right:
+        keyAction: NextWordAfterCursor
+        displayText: "↦"
+
+
+  # ----------------------
+  # SHIFTED — uppercase & destructive actions
+  # ----------------------
+  shifted:
+
+    # Diacritics
+    key0_1:
+      top:
+        text: "\u0301"
+        displayText: "◌́"
+
+    # Ukrainian letters (uppercase)
+    key0_2:
+      top:
+        text: І
+
+    key0_3:
+      top:
+        text: Ї
+      bottom:
+        text: Є
+
+    key1_1:
+      left:
+        text: Ш
+      bottom:
+        text: Ґ
+
+    # Typography
+    key0_4:
+      top:
+        text: "—"
+
+    # Word-wise deletion
+    key2_0:
+      left:
+        keyAction: DeleteWordBeforeCursor
+        displayText: "↜"
+
+    key2_5:
+      right:
+        keyAction: DeleteWordAfterCursor
+        displayText: "↝"
+
+
+  # ----------------------
+  # NUMERIC — symbols & typography helpers
+  # ----------------------
+  numeric:
+
+    # Currency & spacing
+    key1_4:
+      top:
+        text: "₴"
+      bottom:
+        text: "₽"
+      right:
+        text: "\u00A0"
+        displayText: "⍽"
+
+    # Typographic quotes
+    key0_4:
+      topLeft:
+        text: "«"
+      topRight:
+        text: "»"
