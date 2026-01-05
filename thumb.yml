@@ -43,7 +43,6 @@ ENHyper:
       longPress:
         text: "0"
 
-    # Word-wise navigation
     key2_0:
       left:
         keyAction: PreviousWordBeforeCursor
@@ -51,11 +50,6 @@ ENHyper:
       right:
         keyAction: HideKeyboard
         displayText: "⊘"
-
-    key2_5:
-      right:
-        keyAction: NextWordAfterCursor
-        displayText: "↦"
 
     key2_1:
       longPress:
@@ -68,6 +62,11 @@ ENHyper:
     key2_3:
       longPress:
         text: "9"
+
+    key2_5:
+      right:
+        keyAction: NextWordAfterCursor
+        displayText: "↦"
 
   # ----------------------
   # SHIFTED — destructive editor actions
@@ -105,7 +104,6 @@ ENHyper:
       longPress:
         text: "0"
 
-    # Word-wise deletion
     key2_0:
       left:
         keyAction: DeleteWordBeforeCursor
@@ -135,6 +133,13 @@ ENHyper:
   # NUMERIC — symbols & typography helpers
   # ----------------------
   numeric:
+    # Typographic quotes
+    key0_4:
+      topLeft:
+        text: "«"
+      topRight:
+        text: "»"
+
     # Currency & spacing
     key1_4:
       top:
@@ -144,13 +149,6 @@ ENHyper:
       right:
         text: "\u00A0" # Non-breaking space
         displayText: "⍽"
-
-    # Typographic quotes
-    key0_4:
-      topLeft:
-        text: "«"
-      topRight:
-        text: "»"
 
 # ======================================================
 # RUHyper — Cyrillic / UA-extended thumb-key hyper layer
@@ -167,6 +165,8 @@ RUHyper:
 
     # Diacritics / accents
     key0_1:
+      left:
+        text: ґ
       top:
         text: "\u0301"
         displayText: "◌́"
@@ -206,7 +206,6 @@ RUHyper:
       longPress:
         text: "0"
 
-    # Word-wise navigation
     key2_0:
       left:
         keyAction: PreviousWordBeforeCursor
@@ -216,8 +215,6 @@ RUHyper:
         displayText: "⊘"
 
     key2_1:
-      bottom:
-        text: ґ
       longPress:
         text: "7"
 
@@ -240,6 +237,8 @@ RUHyper:
   shifted:
     # Diacritics
     key0_1:
+      left:
+        text: Ґ
       top:
         text: "\u0301"
         displayText: "◌́"
@@ -269,6 +268,20 @@ RUHyper:
     key1_1:
       left:
         text: Ш
+      longPress:
+        text: "4"
+
+    key1_2:
+      longPress:
+        text: "5"
+
+    key1_3:
+      longPress:
+        text: "6"
+
+    key1_4:
+      longPress:
+        text: "0"
 
     # Word-wise deletion
     key2_0:
@@ -280,8 +293,6 @@ RUHyper:
         displayText: "⊘"
 
     key2_1:
-      bottom:
-        text: Ґ
       longPress:
         text: "7"
 
@@ -302,6 +313,13 @@ RUHyper:
   # NUMERIC — symbols & typography helpers
   # ----------------------
   numeric:
+    # Typographic quotes
+    key0_4:
+      topLeft:
+        text: "«"
+      topRight:
+        text: "»"
+
     # Currency & spacing
     key1_4:
       top:
@@ -311,10 +329,3 @@ RUHyper:
       right:
         text: "\u00A0"
         displayText: "⍽"
-
-    # Typographic quotes
-    key0_4:
-      topLeft:
-        text: "«"
-      topRight:
-        text: "»"
