@@ -2,76 +2,147 @@
 # ENHyper — English thumb-key hyper layer
 # ======================================================
 ENHyper:
-
   # ----------------------
   # MAIN — navigation & safe actions
   # ----------------------
   main:
-
     # Diacritics / accents
     key0_1:
       top:
-        text: "\u0301"          # Combining acute accent
+        text: "\u0301" # Combining acute accent
         displayText: "◌́"
+      longPress:
+        text: "1"
+
+    key0_2:
+      longPress:
+        text: "2"
+
+    key0_3:
+      longPress:
+        text: "3"
 
     # Typography
     key0_4:
       top:
-        text: "—"               # Em dash
+        text: "—" # Em dash
+
+    key1_1:
+      longPress:
+        text: "4"
+
+    key1_2:
+      longPress:
+        text: "5"
+
+    key1_3:
+      longPress:
+        text: "6"
+
+    key1_4:
+      longPress:
+        text: "0"
 
     # Word-wise navigation
     key2_0:
       left:
         keyAction: PreviousWordBeforeCursor
         displayText: "↤"
+      right:
+        keyAction: HideKeyboard
+        displayText: "⊘"
 
     key2_5:
       right:
         keyAction: NextWordAfterCursor
         displayText: "↦"
 
+    key2_1:
+      longPress:
+        text: "7"
+
+    key2_2:
+      longPress:
+        text: "8"
+
+    key2_3:
+      longPress:
+        text: "9"
 
   # ----------------------
   # SHIFTED — destructive editor actions
   # ----------------------
   shifted:
-
     # Diacritics (kept identical for muscle memory)
     key0_1:
       top:
         text: "\u0301"
         displayText: "◌́"
+      longPress:
+        text: "1"
 
-    # Typography (same position as main)
-    key0_4:
-      top:
-        text: "—"
+    key0_2:
+      longPress:
+        text: "2"
+
+    key0_3:
+      longPress:
+        text: "3"
+
+    key1_1:
+      longPress:
+        text: "4"
+
+    key1_2:
+      longPress:
+        text: "5"
+
+    key1_3:
+      longPress:
+        text: "6"
+
+    key1_4:
+      longPress:
+        text: "0"
 
     # Word-wise deletion
     key2_0:
       left:
         keyAction: DeleteWordBeforeCursor
         displayText: "↜"
+      right:
+        keyAction: HideKeyboard
+        displayText: "⊘"
+
+    key2_1:
+      longPress:
+        text: "7"
+
+    key2_2:
+      longPress:
+        text: "8"
+
+    key2_3:
+      longPress:
+        text: "9"
 
     key2_5:
       right:
         keyAction: DeleteWordAfterCursor
         displayText: "↝"
 
-
   # ----------------------
   # NUMERIC — symbols & typography helpers
   # ----------------------
   numeric:
-
     # Currency & spacing
     key1_4:
       top:
-        text: "₴"               # Ukrainian hryvnia
+        text: "₴" # Ukrainian hryvnia
       bottom:
-        text: "₽"               # Russian ruble
+        text: "₽" # Russian ruble
       right:
-        text: "\u00A0"          # Non-breaking space
+        text: "\u00A0" # Non-breaking space
         displayText: "⍽"
 
     # Typographic quotes
@@ -81,111 +152,156 @@ ENHyper:
       topRight:
         text: "»"
 
-
 # ======================================================
 # RUHyper — Cyrillic / UA-extended thumb-key hyper layer
 # ======================================================
 RUHyper:
-
   # ----------------------
   # MAIN — navigation & language extensions
   # ----------------------
   main:
+    # Apostrophe / light punctuation
+    key0_4:
+      top:
+        text: "'"
 
     # Diacritics / accents
     key0_1:
       top:
         text: "\u0301"
         displayText: "◌́"
+      longPress:
+        text: "1"
 
     # Ukrainian letters (lowercase)
     key0_2:
       top:
         text: і
+      longPress:
+        text: "2"
 
     key0_3:
       top:
         text: ї
       bottom:
         text: є
+      longPress:
+        text: "3"
 
     key1_1:
       left:
         text: ш
-        
-    key2_1:
-      bottom:
-        text: ґ
+      longPress:
+        text: "4"
 
-    # Apostrophe / light punctuation
-    key0_4:
-      top:
-        text: "'"
+    key1_2:
+      longPress:
+        text: "5"
+
+    key1_3:
+      longPress:
+        text: "6"
+
+    key1_4:
+      longPress:
+        text: "0"
 
     # Word-wise navigation
     key2_0:
       left:
         keyAction: PreviousWordBeforeCursor
         displayText: "↤"
+      right:
+        keyAction: HideKeyboard
+        displayText: "⊘"
+
+    key2_1:
+      bottom:
+        text: ґ
+      longPress:
+        text: "7"
+
+    key2_2:
+      longPress:
+        text: "8"
+
+    key2_3:
+      longPress:
+        text: "9"
 
     key2_5:
       right:
         keyAction: NextWordAfterCursor
         displayText: "↦"
 
-
   # ----------------------
   # SHIFTED — uppercase & destructive actions
   # ----------------------
   shifted:
-
     # Diacritics
     key0_1:
       top:
         text: "\u0301"
         displayText: "◌́"
+      longPress:
+        text: "1"
 
     # Ukrainian letters (uppercase)
     key0_2:
       top:
         text: І
+      longPress:
+        text: "2"
 
     key0_3:
       top:
         text: Ї
       bottom:
         text: Є
-
-    key1_1:
-      left:
-        text: Ш
-    
-    key2_1:
-      bottom:
-        text: Ґ
+      longPress:
+        text: "3"
 
     # Typography
     key0_4:
       top:
         text: "—"
 
+    key1_1:
+      left:
+        text: Ш
+
     # Word-wise deletion
     key2_0:
       left:
         keyAction: DeleteWordBeforeCursor
         displayText: "↜"
+      right:
+        keyAction: HideKeyboard
+        displayText: "⊘"
+
+    key2_1:
+      bottom:
+        text: Ґ
+      longPress:
+        text: "7"
+
+    key2_2:
+      longPress:
+        text: "8"
+
+    key2_3:
+      longPress:
+        text: "9"
 
     key2_5:
       right:
         keyAction: DeleteWordAfterCursor
         displayText: "↝"
 
-
   # ----------------------
   # NUMERIC — symbols & typography helpers
   # ----------------------
   numeric:
-
     # Currency & spacing
     key1_4:
       top:
